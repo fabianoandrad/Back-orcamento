@@ -62,7 +62,7 @@ app.post("/home", async (req, res) => {
     });
   }
 
-  // Salvar os dados na db
+  // Salvar os dados na db mongodb
   await Home.create(dados, (error) => {
     if (error) {
       return res.status(400).json({
